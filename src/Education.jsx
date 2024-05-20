@@ -1,13 +1,19 @@
+import Section from './Section';
+import {InputField} from './InputFields';
 
-export default function Education({schoolName, degree, gradYear}) {
-    return (
-        <form>
-            <h2>Education</h2>
-            <fieldset>
-                <input placeholder="School Name" />
-                <input placeholder="Degree" />
-                <input placeholder="gradYear" />
-            </fieldset>
-        </form>
-    )
+function Education({schoolName = "", degree = "", gradYear = ""}) {
+
+    const data = {
+        schoolName: InputField('text', 'School Name', schoolName),
+        degree: InputField('text', 'Degree', degree),
+        gradYear: InputField('number', 'Graduation Year', gradYear)
+    }
+
+    return <Section 
+        title="Education"
+        initialData={data}
+    />
 }
+
+
+export default Education

@@ -1,4 +1,5 @@
 
+
 export default function Experiences({jobs}) {
     // TODO add new experience on click
 
@@ -18,6 +19,7 @@ function Experience({companyName, positionTitle, responsibilities, startDate, en
     return (
         <>
             <form>
+                <button>Delete</button>
                 <input placeholder="Company Name"></input>
                 <input placeholder="Start Date (MM/YYY)"></input>
                 <input placeholder="End Date (MM/YYY)"></input>
