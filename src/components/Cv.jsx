@@ -1,7 +1,5 @@
-import Experiences from './Experience';
 import Section from './Section';
 import { TextAreaData, InputData } from './InputFields';
-import './GeneralInfo.css';
 import { useState } from 'react';
 
 const generalInfoData = {
